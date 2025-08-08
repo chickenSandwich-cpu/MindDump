@@ -56,6 +56,15 @@ public class Main {
     }
 
     public static void searchEntry(){
-        System.out.println("debug");
+        System.out.print("Enter tags to search: ");
+        String searchTags = scanner.nextLine();
+        System.out.println("Searching for entries with tags: " + searchTags);
+        for (Entry e : entries) {
+            if (e.tags.contains(searchTags)) {
+                System.out.println(e);
+            } else {
+                System.out.println("No entries found with the specified tags.");
+            }
+        }
     }
 }
