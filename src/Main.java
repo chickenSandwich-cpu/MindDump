@@ -9,7 +9,7 @@ public class Main {
         System.out.println("Welcome to MindDump!");
         System.out.println("What do you wanna do today? ");
 
-        while (true){
+        while(true){
             System.out.println("[1] Write Entry");
             System.out.println("[2] View All");
             System.out.println("[3] Exit");
@@ -18,7 +18,7 @@ public class Main {
             int input = scanner.nextInt();
             String _ = scanner.nextLine();
 
-            switch (input){
+            switch(input){
                 case 1 -> {
                     System.out.print("Write entry here: ");
                     String entry = scanner.nextLine();
